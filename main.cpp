@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Date.h"
+#include "week_1/Date.h"
 
 using namespace std;
 
@@ -28,5 +28,5 @@ int main()
   cin >> year;
 
   Date birthday(date, month, year);
-  cout << birthday.printVnFormat() << 'h';
+  cout << birthday.printVnFormat();
 }
