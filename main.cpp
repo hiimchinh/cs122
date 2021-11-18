@@ -1,12 +1,15 @@
 #include <iostream>
 #include "week_1/Date.h"
+#include "week_1/Employee.h"
 
 void useDateClass();
+void useEmployeeClass();
 using namespace std;
 
 int main()
 {
-  useDateClass();
+  useEmployeeClass();
+  return 0;
 }
 
 void useDateClass()
@@ -36,3 +39,20 @@ void useDateClass()
   Date birthday(date, month, year);
   cout << birthday.printVnFormat();
 }
+
+void useEmployeeClass()
+{
+  Employee chinh = Employee("Chinh Hoang", 99, "Product", "Software Engineer");
+  Employee huyDau = Employee();
+  huyDau.setName("Huy Dau");
+  huyDau.setIdNumber(1);
+  huyDau.setDepartment("BOD");
+  huyDau.setPosition("CEO");
+  Employee soaLe("Soa Le", 2);
+  soaLe.setDepartment("Marketing");
+  soaLe.setPosition("Manager");
+  cout << chinh.print() << endl;
+  cout << huyDau.print() << endl;
+  cout << soaLe.print() << endl;
+}
+
