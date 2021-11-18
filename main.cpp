@@ -1,9 +1,15 @@
 #include <iostream>
 #include "week_1/Date.h"
 
+void useDateClass();
 using namespace std;
 
 int main()
+{
+  useDateClass();
+}
+
+void useDateClass()
 {
   int date, month, year;
   int loopTimes = 0;
