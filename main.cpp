@@ -1,14 +1,16 @@
 #include <iostream>
 #include "week_1/Date.h"
 #include "week_1/Employee.h"
+#include "week_1/Inventory.h"
 
 void useDateClass();
 void useEmployeeClass();
+void useInventoryClass();
 using namespace std;
 
 int main()
 {
-  useEmployeeClass();
+  useInventoryClass();
   return 0;
 }
 
@@ -54,5 +56,25 @@ void useEmployeeClass()
   cout << chinh.print() << endl;
   cout << huyDau.print() << endl;
   cout << soaLe.print() << endl;
+}
+
+void useInventoryClass()
+{
+  Inventory item;
+  int itemNumber, quantity;
+  double cost;
+  cout << "Please input item number of the item: ";
+  cin >> itemNumber;
+  item.setItemNumber(itemNumber);
+  cout << "Please input cost of the item: ";
+  cin >> cost;
+  item.setCost(cost);
+  cout << "Please input quantiy of the item: ";
+  cin >> quantity;
+  item.setQuantity(quantity);
+  cout << "Item number is: " << item.getItemNumber() << endl;
+  cout << "Cost: " << item.getCost() << endl;
+  cout << "Quantity: " << item.getQuantity() << endl;
+  cout << "Total cost is: " << item.getTotalCost() << endl;
 }
 
