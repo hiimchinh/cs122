@@ -17,13 +17,21 @@ public:
     void setCost(double cost);
     void setTotalCost();
     int getItemNumber() const
-        { return itemNumber; }
+    {
+        return itemNumber;
+    }
     int getQuantity() const
-        { return quantity; }
+    {
+        return quantity;
+    }
     double getCost() const
-        { return cost; }
+    {
+        return cost;
+    }
     double getTotalCost() const
-        { return totalCost; }
+    {
+        return totalCost;
+    }
 };
 
 #endif

@@ -4,13 +4,13 @@
 #include <string>
 using namespace std;
 
-
 class Employee
 {
-  private:
+private:
     int idNumber;
     string name, department, position;
-  public:
+
+public:
     Employee(string name, int id, string department, string position);
     Employee(string name, int id);
     Employee();
