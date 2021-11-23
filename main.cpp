@@ -2,6 +2,7 @@
 #include "week_1/Date.h"
 #include "week_1/Employee.h"
 #include "week_1/Inventory.h"
+#include "week_1/Circle.h"
 
 void useDateClass();
 void useEmployeeClass();
@@ -10,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    useInventoryClass();
+    useCircleClass();
     return 0;
 }
 
