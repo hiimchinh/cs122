@@ -1,7 +1,23 @@
 #include "Employee.h"
-#include <stdio.h>
+#include <iostream>
 
 using namespace std;
+
+void useEmployeeClass()
+{
+    Employee chinh = Employee("Chinh Hoang", 99, "Product", "Software Engineer");
+    Employee huyDau = Employee();
+    huyDau.setName("Huy Dau");
+    huyDau.setIdNumber(1);
+    huyDau.setDepartment("BOD");
+    huyDau.setPosition("CEO");
+    Employee soaLe("Soa Le", 2);
+    soaLe.setDepartment("Marketing");
+    soaLe.setPosition("Manager");
+    cout << chinh.print() << endl;
+    cout << huyDau.print() << endl;
+    cout << soaLe.print() << endl;
+}
 
 Employee::Employee()
 {

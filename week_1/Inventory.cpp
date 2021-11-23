@@ -2,6 +2,26 @@
 #include <iostream>
 using namespace std;
 
+void useInventoryClass()
+{
+    Inventory item;
+    int itemNumber, quantity;
+    double cost;
+    cout << "Please input item number of the item: ";
+    cin >> itemNumber;
+    item.setItemNumber(itemNumber);
+    cout << "Please input cost of the item: ";
+    cin >> cost;
+    item.setCost(cost);
+    cout << "Please input quantiy of the item: ";
+    cin >> quantity;
+    item.setQuantity(quantity);
+    cout << "Item number is: " << item.getItemNumber() << endl;
+    cout << "Cost: " << item.getCost() << endl;
+    cout << "Quantity: " << item.getQuantity() << endl;
+    cout << "Total cost is: " << item.getTotalCost() << endl;
+}
+
 Inventory::Inventory()
 {
     itemNumber = 0;

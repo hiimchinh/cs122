@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void useInventoryClass();
+
 class Inventory
 {
 private:

@@ -5,13 +5,12 @@
 #include "week_1/Circle.h"
 
 void useDateClass();
-void useEmployeeClass();
-void useInventoryClass();
+
 using namespace std;
 
 int main()
 {
-    useCircleClass();
+    useDateClass();
     return 0;
 }
 
@@ -43,38 +42,4 @@ void useDateClass()
     cout << birthday.printVnFormat();
 }
 
-void useEmployeeClass()
-{
-    Employee chinh = Employee("Chinh Hoang", 99, "Product", "Software Engineer");
-    Employee huyDau = Employee();
-    huyDau.setName("Huy Dau");
-    huyDau.setIdNumber(1);
-    huyDau.setDepartment("BOD");
-    huyDau.setPosition("CEO");
-    Employee soaLe("Soa Le", 2);
-    soaLe.setDepartment("Marketing");
-    soaLe.setPosition("Manager");
-    cout << chinh.print() << endl;
-    cout << huyDau.print() << endl;
-    cout << soaLe.print() << endl;
-}
 
-void useInventoryClass()
-{
-    Inventory item;
-    int itemNumber, quantity;
-    double cost;
-    cout << "Please input item number of the item: ";
-    cin >> itemNumber;
-    item.setItemNumber(itemNumber);
-    cout << "Please input cost of the item: ";
-    cin >> cost;
-    item.setCost(cost);
-    cout << "Please input quantiy of the item: ";
-    cin >> quantity;
-    item.setQuantity(quantity);
-    cout << "Item number is: " << item.getItemNumber() << endl;
-    cout << "Cost: " << item.getCost() << endl;
-    cout << "Quantity: " << item.getQuantity() << endl;
-    cout << "Total cost is: " << item.getTotalCost() << endl;
-}
